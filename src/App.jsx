@@ -1,6 +1,7 @@
 import Player from "./components/Player";
 import Swords from "./components/Swords";
 import Ball from "./components/Ball";
+import Gameboard from "./components/Gameboard";
 function App() {
   return (
     <main>
@@ -9,7 +10,7 @@ function App() {
           <Player initialName="Player 1" symbol={<Swords />} />
           <Player initialName="Player 2" symbol={<Ball />} />
         </ol>
-        {/* GAME BOARD */}
+        <Gameboard />
       </div>
       {/* LOG */}
     </main>
