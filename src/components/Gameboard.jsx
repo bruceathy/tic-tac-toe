@@ -4,6 +4,7 @@ const initialGameboard = [
   [null, null, null],
   [null, null, null],
   [null, null, null],
+  [null, null, null],
 ];
 
 export default function Gameboard() {
