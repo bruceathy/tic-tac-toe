@@ -27,7 +27,6 @@ function App() {
           activePlayerSymbol={activePlayer}
         />
       </div>
-      {/* LOG */}
     </main>
   );
 }
