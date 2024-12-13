@@ -6,7 +6,6 @@ const initialGameboard = [
   [null, null, null],
 ];
 
-// rewatch udemy video to fix bug
 export default function Gameboard({ onSelectSquare, activePlayerSymbol }) {
   // const [gameboard, setGameboard] = useState(initialGameboard);
 
