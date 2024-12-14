@@ -7,19 +7,19 @@ const initialGameboard = [
 ];
 
 export default function Gameboard({ onSelectSquare, activePlayerSymbol }) {
-  // const [gameboard, setGameboard] = useState(initialGameboard);
+  const [gameboard, setGameboard] = useState(initialGameboard);
 
-  // function handleSelectSquare(rowIndex, colIndex) {
-  //   setGameboard((prevGameBoard) => {
-  //     const updatedBoard = [
-  //       ...prevGameBoard.map((innerArray) => [...innerArray]),
-  //     ];
-  //     updatedBoard[rowIndex][colIndex] = activePlayerSymbol;
-  //     return updatedBoard;
-  //   });
+  function handleSelectSquare(rowIndex, colIndex) {
+    setGameboard((prevGameBoard) => {
+      const updatedBoard = [
+        ...prevGameBoard.map((innerArray) => [...innerArray]),
+      ];
+      updatedBoard[rowIndex][colIndex] = activePlayerSymbol;
+      return updatedBoard;
+    });
 
-  //   onSelectSquare();
-  // }
+    onSelectSquare();
+  }
 
   return (
     <ol id="game-board">
