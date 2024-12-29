@@ -6,7 +6,7 @@ import Log from "./components/Log";
 function deriveActivePlayer(gameTurns) {
   let currentPlayer = "X";
 
-  if (gameTurns.length > 0 && prevTurns[0].player === "X") {
+  if (gameTurns.length > 0 && gameTurns[0].player === "X") {
     currentPlayer = "O";
   }
 
@@ -20,7 +20,7 @@ function App() {
   const activePlayer = deriveActivePlayer(gameTurns);
 
   function handleSelectSquare(rowIndex, colIndex) {
-    setActivePlayer((curActivePlayer) => (curActivePlayer === "X" ? "O" : "X"));
+    // setActivePlayer((curActivePlayer) => (curActivePlayer === "X" ? "O" : "X"));
     setGameTurns((prevTurns) => {
       const currentPlayer = deriveActivePlayer(prevTurns);
 
