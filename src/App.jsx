@@ -13,7 +13,6 @@ function deriveActivePlayer(gameTurns) {
   return currentPlayer;
 }
 
-// REWATCH VIDEO
 function App() {
   const [gameTurns, setGameTurns] = useState([]);
   // const [activePlayer, setActivePlayer] = useState("X");
