@@ -1,3 +1,6 @@
+// import ({ useState } from "react");
+import { WIN_COMBOS } from "./winning-combos";
+
 const initialGameboard = [
   [null, null, null],
   [null, null, null],
@@ -34,7 +37,10 @@ export default function Gameboard({ onSelectSquare, turns }) {
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
-                <button onClick={() => onSelectSquare(rowIndex, colIndex)}>
+                <button
+                  onClick={() => onSelectSquare(rowIndex, colIndex)}
+                  disabled={playerSymbol !== null}
+                >
                   {playerSymbol}
                 </button>
               </li>
